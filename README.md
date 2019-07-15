@@ -1,3 +1,32 @@
+# Clicky Game
+## Steps taken
+--Created a repo
+--cloned the repo to local drive
+--from the local folder, ran create-react-app, then moved all newly created folders into the root folder so there isn't a redudant folder. 
+--ran npm start to ensure works
+### Create static components
+--in the 'SRC' folder, create a 'Component' folder to store all components
+--from the https://clicky-game.netlify.com/ example, I'll need: 1) navbar, 2) header, 3) main, 4) cards, 5) footer
+#### Navbar 
+--I created a navbar.js component file and pasted in the element conde from the example. 
+--In public\index.html I added the bootstrap cdn (but it doesn't look like the example used bootstrap -- the bootstrap styling were interfering with the css files so I commented it out)
+--in App.js, I imported the navbar and added it to the App function
+#### Header & Footer
+-- I did the same thing as Navbar except in a file called header.js and a file called footer.js
+-- Their footer pulled from an assets folder with another subfolder called images where the react.svg lived, so I recreated an assets folder and an images folder then I copied the svg and saved it in that folder but for some reason, in the example they link to the svg from assets/images/react.svg so I would assume that means the assets folder lives in the same folder as the footer.js but it doesn't pull when I do it that way so instead I import the react.svg from that assets folder. 
+#### Styling
+-- I created a folder in SRC called styles and created a css file for the navbar, header, footer and copied the element styles from the example into this. 
+-- In the component.js I imported the stylings in.
+!!!! new background image for header
+#### Main container
+-- I created a main.js and added the cards component in here.
+#### Cards
+-- I created a card.js and copied one of the card elements from the example. This js will need to have props passed into it. 
+
+
+#### The App.js is going to be where I pull in the components
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
