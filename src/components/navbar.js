@@ -5,13 +5,13 @@ class Navbar extends Component {
   // render to return JSX
   render () {
     return (
-      <nav class='navbar'>
+      <nav className='navbar'>
         <ul>
-          <li class='brand'>
+          <li className='brand'>
             <a href='/'>Clicky Game</a>
           </li>
-          <li class=''>Click an image to begin!</li>
-          <li class=''>Score: {this.props.count} | Top Score: {this.props.topscore}</li>
+          <li className=''>Click an image to begin!</li>
+          <li className=''>Score: {this.props.count} | Top Score: {this.props.topscore}</li>
         </ul>
       </nav>
     )

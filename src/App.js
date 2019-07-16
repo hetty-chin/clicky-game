@@ -13,14 +13,38 @@ class App extends Component {
   state = {
     count: 0
   }
-  // increases this.state by 1
+  // create an array to shuffle cards from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+  shuffle = (array) => {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
+  }
+
+  
   characterClicked = event => {
     this.setState(
       { 
+        // shuffle cards
+        characters: this.shuffle(characters),
+        // increases this.state by 1
         count: this.state.count + 1
       }
-      )
+    )
   }
+
   render () {
     return (
       <div>
@@ -29,9 +53,10 @@ class App extends Component {
         />
         <Header />
         <Wrapper>
-          <main class='container'>
+          <main className='container'>
             {characters.map(character => (
               <Card
+                id={character.id}
                 image={character.image}
                 name={character.name}characterClicked={this.characterClicked}/>
             ))}

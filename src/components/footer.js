@@ -4,8 +4,8 @@ import reactsvg from './assets/images/react.svg'
 
 function Footer () {
   return (
-    <footer class='footer'>
-      <div class='bottom'>Clicky Game! <img alt='react' src={reactsvg} />
+    <footer className='footer'>
+      <div className='bottom'>Clicky Game! <img alt='react' src={reactsvg} />
       </div>
     </footer>
   )

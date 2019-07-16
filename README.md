@@ -32,8 +32,8 @@
 #### Count each click
 -- I added an onclick event to each character. I add this onto the cards.js with the function name 'characterClicked'
 -- I extended the navbar so it can inherit functionality
--- I extended the app.js and bring the click event and navbar score together here. Here I set the state and define the function characterClicked
----
+-- I extended the app.js and bring the click event and navbar score together here. Here I set the state and defined the function characterClicked
+#### Display random images
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
