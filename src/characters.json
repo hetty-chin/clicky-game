@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Director Ton",
+        "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/thumbs/director-ton-aggretsuko-8.31_thumb.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Fenneko",
+        "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/thumbs/fenneko-aggretsuko-73.4_thumb.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Gori",
+        "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/thumbs/gori-aggretsuko-98.5_thumb.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Haida",
+        "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/thumbs/haida-aggretsuko-74.4_thumb.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Kabae",
+        "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/thumbs/kabae-aggretsuko-1.47_thumb.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Komiya",
+        "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/thumbs/komiya-aggretsuko-8.47_thumb.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Puko",
+        "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/thumbs/puko-aggretsuko-2.31_thumb.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Resasuke",
+        "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/thumbs/resasuke-aggretsuko-7.98_thumb.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Retsuko",
+        "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/thumbs/retsuko-aggretsuko-16.6_thumb.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Tsubone",
+        "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/thumbs/tsubone-aggretsuko-2.86_thumb.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Tsunoda",
+        "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/thumbs/tsunoda-aggretsuko-6.26_thumb.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Washimi",
+        "image": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/thumbs/washimi-aggretsuko-39.2_thumb.jpg"
+    }
+]

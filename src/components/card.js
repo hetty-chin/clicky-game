@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Card () {
+function Card (props) {
   return (
-    <div role='img' aria-label='click item' class='click-item' style='background-image: url(&quot;/assets/images/rick.png&quot;);' />
+    <div class='click-item'>
+      <img alt={props.name} src={props.image} />
+    </div>
   )
 }
 

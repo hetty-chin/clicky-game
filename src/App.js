@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from './components/navbar'
 import Header from './components/header'
-// import Main from './components/main'
+import Main from './components/main'
 import Footer from './components/footer'
+import characters from './characters.json'
 import './App.css'
 
 function App () {
@@ -10,7 +11,7 @@ function App () {
     <div>
       <Navbar />
       <Header />
-      {/* <Main /> */}
+      <Main />
       <Footer />
     </div>
   )

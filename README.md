@@ -22,7 +22,11 @@
 -- I created a main.js and added the cards component in here.
 #### Cards
 -- I created a card.js and copied one of the card elements from the example. This js will need to have props passed into it. 
-
+-- I created a cards.json to hold the images of the cards
+-- I set up the cards.js to read the props.image and the props.name for the alt image
+-- I set up the main.js to import the characters.json
+-- I created a wrapper.js and wrapped the cards in it -- I tested it to pull up the first image in the json, and the first alt text -- it worked. 
+-- Then I made it map over the json to pull up all 12 cards and it worked.
 
 #### The App.js is going to be where I pull in the components
 ---
