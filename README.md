@@ -17,7 +17,6 @@
 #### Styling
 -- I created a folder in SRC called styles and created a css file for the navbar, header, footer and copied the element styles from the example into this. 
 -- In the component.js I imported the stylings in.
-!!!! new background image for header !!!
 #### Main container
 -- I created a main.js and added the cards component in here but I later dissolved it and instead placed it into app.js
 #### Cards
@@ -33,8 +32,12 @@
 -- I added an onclick event to each character. I add this onto the cards.js with the function name 'characterClicked'
 -- I extended the navbar so it can inherit functionality
 -- I extended the app.js and bring the click event and navbar score together here. Here I set the state and defined the function characterClicked
-#### Display random images
-
+#### Shuffle images when a character is clicked 
+-- I found a function to shuffle an image on stack overflow, added the function, then called the function with the characterClicked function.
+#### Assess whether the character has already been clicked
+-- In the cards.js for the onclick, I pass in the character id via props.id
+-- I created an empty array to store clickedCharacters. If a character is clicked, the character's id is checked against this clickedCharacters array. If it's already in there, the message changes to a loser message, and everything is reset except for the highscore. If the id is not in the array already, the character will be added to the array, the score will go up as will the highscore.
+-- At every click the highscore is checked with the current score. If the current score is higher than the highscore, the highscore takes on the new score. 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -10,7 +10,7 @@ class Navbar extends Component {
           <li className='brand'>
             <a href='/'>Clicky Game</a>
           </li>
-          <li className=''>Click an image to begin!</li>
+          <li className=''>{this.props.msg}</li>
           <li className=''>Score: {this.props.count} | Top Score: {this.props.topscore}</li>
         </ul>
       </nav>

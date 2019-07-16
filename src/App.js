@@ -11,7 +11,10 @@ import './styles/main.css'
 class App extends Component {
   // setting the state
   state = {
-    count: 0
+    count: 0,
+    topscore: 0,
+    msg: '',
+    clickedCharacters: []
   }
   // create an array to shuffle cards from https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
   shuffle = (array) => {
@@ -33,16 +36,42 @@ class App extends Component {
     return array;
   }
 
-  
-  characterClicked = event => {
+  characterClicked = (id) => {
+    // shuffle cards
     this.setState(
-      { 
-        // shuffle cards
-        characters: this.shuffle(characters),
-        // increases this.state by 1
-        count: this.state.count + 1
+      {
+        characters: this.shuffle(characters)
       }
     )
+
+    if (this.state.clickedCharacters.includes(id)) {
+      this.setState({
+        // reset everything
+        count: 0,
+        msg: `You've clicked that already! Start over.`,
+        clickedCharacters: []
+      })
+    } else {
+      this.setState({
+        // increases this.state by 1
+        count: this.state.count + 1,
+        msg: `Keep going! Only click each ONCE.`,
+        clickedCharacters: this.state.clickedCharacters.concat([id])
+      })
+    }
+
+    // keeping track of top score
+    if (this.state.count > this.state.topscore) {
+      this.setState({ topscore: this.state.count})
+    } 
+
+    // winning
+    if (this.state.count === 11) {
+      this.setState({
+        msg: 'YOU DID IT! YOU WON!'
+      })
+    }
+
   }
 
   render () {
@@ -50,6 +79,8 @@ class App extends Component {
       <div>
         <Navbar 
           count={this.state.count}
+          msg={this.state.msg}
+          topscore={this.state.topscore}
         />
         <Header />
         <Wrapper>
