@@ -38,6 +38,7 @@
 -- In the cards.js for the onclick, I pass in the character id via props.id
 -- I created an empty array to store clickedCharacters. If a character is clicked, the character's id is checked against this clickedCharacters array. If it's already in there, the message changes to a loser message, and everything is reset except for the highscore. If the id is not in the array already, the character will be added to the array, the score will go up as will the highscore.
 -- At every click the highscore is checked with the current score. If the current score is higher than the highscore, the highscore takes on the new score. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
