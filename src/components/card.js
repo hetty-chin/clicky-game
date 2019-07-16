@@ -1,11 +1,9 @@
 import React from 'react'
 
-function Card (props) {
-  return (
-    <div class='click-item'>
-      <img alt={props.name} src={props.image} />
-    </div>
-  )
-}
+const Card = props => (
+  <div class='click-item'>
+    <img alt={props.name} src={props.image} onClick={props.characterClicked} />
+  </div>
+)
 
 export default Card

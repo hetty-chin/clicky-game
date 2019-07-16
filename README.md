@@ -17,9 +17,9 @@
 #### Styling
 -- I created a folder in SRC called styles and created a css file for the navbar, header, footer and copied the element styles from the example into this. 
 -- In the component.js I imported the stylings in.
-!!!! new background image for header
+!!!! new background image for header !!!
 #### Main container
--- I created a main.js and added the cards component in here.
+-- I created a main.js and added the cards component in here but I later dissolved it and instead placed it into app.js
 #### Cards
 -- I created a card.js and copied one of the card elements from the example. This js will need to have props passed into it. 
 -- I created a cards.json to hold the images of the cards
@@ -28,7 +28,11 @@
 -- I created a wrapper.js and wrapped the cards in it -- I tested it to pull up the first image in the json, and the first alt text -- it worked. 
 -- Then I made it map over the json to pull up all 12 cards and it worked.
 
-#### The App.js is going to be where I pull in the components
+### Dynamic parts
+#### Count each click
+-- I added an onclick event to each character. I add this onto the cards.js with the function name 'characterClicked'
+-- I extended the navbar so it can inherit functionality
+-- I extended the app.js and bring the click event and navbar score together here. Here I set the state and define the function characterClicked
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
